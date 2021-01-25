@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.fact {
+  min-height: 10vh;
+  &__id {
+    width: 100%;
+    border-bottom: 2px solid #70707025;
+    position: relative;
+    font-size: $h6FontSize;
+    padding: 0.75rem 0;
+  }
+  &__id:before {
+    position: absolute;
+    content: "";
+    width: 10%;
+    border-bottom: 2px solid #6d6d6d;
+    bottom: -2px;
+  }
+
+  &__desc {
+    font-size: $normalFontSize;
+    color: #4e4e4e;
+    padding: 1rem 0;
+  }
+}

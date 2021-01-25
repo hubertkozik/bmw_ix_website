@@ -1,0 +1,70 @@
+@import "variables.scss";
+
+.facts {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  min-height: 600px;
+
+  &__images {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  &__biggerImg {
+    width: 55%;
+    height: 100%;
+  }
+
+  &__smallerImg {
+    position: absolute;
+    width: 30%;
+    left: 10%;
+    top: 60%;
+  }
+
+  &__info {
+    width: 50%;
+    padding: 0 5%;
+  }
+
+  &__title {
+    margin: 3% 0 5%;
+    font-size: $h2FontSize;
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .facts {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    height: auto !important;
+
+    &__images {
+      width: 100%;
+    }
+
+    &__biggerImg {
+    }
+
+    &__smallerImg {
+      width: 30% !important;
+      left: 0;
+    }
+
+    &__info {
+      width: 100%;
+      padding: 20% 10% 10%;
+    }
+  }
+}

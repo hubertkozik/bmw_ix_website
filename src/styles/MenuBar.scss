@@ -1,0 +1,113 @@
+@import "variables.scss";
+
+.menuBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1rem 10%;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    list-style-type: none;
+    width: 100%;
+    margin-right: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    padding: 1rem 0;
+    position: relative;
+  }
+
+  &__menuItem a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  &__menuItem + &__menuItem a {
+    margin-left: 5rem;
+  }
+
+  &__menuItem a::after {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+  }
+
+  &__menuItem a:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+
+  &__menuItem a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 2px;
+    height: 0%;
+    background: #fff;
+    transition: height 0.3s;
+  }
+
+  &__menuItem a:hover::before {
+    height: 100%;
+    transition: height 0.3s;
+  }
+
+  &__logo {
+    margin-left: auto;
+  }
+
+  &__slogan {
+    position: absolute;
+    top: 115%;
+    right: 0;
+  }
+
+  &__click {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .menuBar {
+    &__menu {
+      display: none;
+    }
+    &__menu--active {
+      display: grid;
+      position: absolute;
+      border: none;
+      margin-left: -10%;
+      top: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+    &__menuItem + &__menuItem a {
+      margin: 0;
+    }
+    &__click {
+      display: block !important;
+      font-size: $h2FontSize !important;
+    }
+
+    &__slogan {
+      display: none;
+    }
+  }
+}

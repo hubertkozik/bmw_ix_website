@@ -1,0 +1,55 @@
+@import "variables.scss";
+
+.sentPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: grid;
+  place-items: center;
+  color: white;
+  z-index: 20;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1rem;
+    width: 25%;
+  }
+
+  &__title {
+    font-size: $h4FontSize;
+  }
+
+  &__text {
+    font-size: $normalFontSize;
+    text-align: center;
+  }
+
+  &__btn {
+    font-size: $h4FontSize;
+    padding: 0.5rem 3rem;
+    border: none;
+    outline: none;
+    background-color: $mainColor;
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+  &__btn:hover {
+    background-color: $hoverColor;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .sentPopup {
+    &__wrapper {
+      width: 50%;
+    }
+  }
+}

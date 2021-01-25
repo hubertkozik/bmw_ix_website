@@ -1,0 +1,35 @@
+@import "variables.scss";
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+  width: 100%;
+  height: auto;
+  padding: 0 0.5rem;
+
+  &__imgLeft {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  &__right {
+    background: green;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  &__imgRight {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.25rem;
+  }
+}

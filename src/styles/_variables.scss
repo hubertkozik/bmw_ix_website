@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap");
+
+$mainColor: #3369d3;
+$secondMainColor: #f87070;
+$hoverColor: #5083e9;
+
+$h1FontSize: calc(48px + 0.1vw);
+$h2FontSize: calc(32px + 0.1vw);
+$h3FontSize: calc(18px + 0.7vw);
+$h4FontSize: calc(18px + 0.1vw);
+$h5FontSize: calc(16px + 0.1vw);
+$h6FontSize: calc(12px + 0.1vw);
+
+$normalFontSize: calc(14px + 0.1vw);
+
+.boldIt {
+  font-weight: bold;
+}

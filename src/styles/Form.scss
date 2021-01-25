@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+.formContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-size: $normalFontSize;
+
+  & > * {
+    margin-top: 1rem;
+  }
+
+  &__header {
+    font-size: $h4FontSize;
+  }
+
+  &__radios {
+    font-size: $h4FontSize;
+  }
+
+  &__radio {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  &__input {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    border: 1px solid #70707025;
+    font-size: $h5FontSize;
+  }
+
+  &__submit {
+    width: 60%;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem;
+    background-color: $mainColor;
+    color: white;
+    font-weight: bold;
+    font-size: $h4FontSize;
+    margin-top: 2rem;
+  }
+}

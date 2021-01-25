@@ -1,0 +1,112 @@
+@import "variables.scss";
+
+.main {
+  background-color: black;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 56.25%
+  );
+  display: grid;
+  place-items: center;
+  color: white;
+  min-height: 500px;
+
+  &__text {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  &__title {
+    font-size: $h1FontSize;
+    margin-top: 2.5%;
+  }
+
+  &__titleDesc {
+    font-size: $h5FontSize;
+    margin-top: 2.5%;
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 0 10% 1%;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    place-items: center;
+  }
+
+  &__sliderItem {
+    width: 4rem;
+    height: 0.25rem;
+    color: transparent;
+    background-color: white;
+    transition: background-color 1s;
+  }
+
+  &__sliderItem + &__sliderItem {
+    margin-left: 1rem;
+  }
+
+  &__sliderItem--active {
+    background-color: $mainColor;
+    transition: background-color 1s;
+  }
+
+  &__btn {
+    background-color: $mainColor;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $h4FontSize;
+    text-align: center;
+  }
+
+  &__btn:hover {
+    background-color: $hoverColor;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 76.25%
+    );
+    &__title {
+      width: 37%;
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column-reverse;
+      place-items: center;
+    }
+
+    &__slider {
+      margin-top: 10%;
+    }
+
+    &__btn {
+      z-index: 10;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .main {
+    &__title {
+      width: 50%;
+    }
+  }
+}
