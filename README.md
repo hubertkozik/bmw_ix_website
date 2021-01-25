@@ -1,6 +1,6 @@
 # BMW iX Landing Page
 
-This repo contains a landing page written in React.js and SASS. Website is built with responsive web design approach. This page is hosted on github pages, so you can see it anytime and from anywhere.
+This repo contains a landing page written in React.js and SASS. I also used a BEM methodology. Website is built with responsive web design approach and it is also retina friendly. This page is hosted on github pages, so you can see it anytime and from anywhere.
 
 ## Link to see this page
 
