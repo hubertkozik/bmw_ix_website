@@ -28,7 +28,7 @@ function MobileMenu({ menuClicked, setMenuClicked }) {
       <ul className="mobileMenu__menu">
         <li className="mobileMenu__menuItem">
           <Link
-            to="/#facts"
+            to="/bmw_ix_website/#facts"
             onClick={() => {
               setMenuClicked(false);
               document.body.style.overflow = `auto`;
@@ -39,7 +39,7 @@ function MobileMenu({ menuClicked, setMenuClicked }) {
         </li>
         <li className="mobileMenu__menuItem">
           <Link
-            to="/#form"
+            to="/bmw_ix_website/#form"
             onClick={() => {
               setMenuClicked(false);
               document.body.style.overflow = `auto`;
@@ -50,7 +50,7 @@ function MobileMenu({ menuClicked, setMenuClicked }) {
         </li>
         <li className="mobileMenu__menuItem">
           <Link
-            to="/#gallery"
+            to="/bmw_ix_website/#gallery"
             onClick={() => {
               setMenuClicked(false);
               document.body.style.overflow = `auto`;
@@ -62,7 +62,7 @@ function MobileMenu({ menuClicked, setMenuClicked }) {
       </ul>
       <div className="mobileMenu__thirdRow">
         <Link
-          to="/#form"
+          to="/bmw_ix_website/#form"
           className="mobileMenu__btn"
           onClick={() => {
             setMenuClicked(false);

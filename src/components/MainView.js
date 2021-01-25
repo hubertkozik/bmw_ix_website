@@ -100,7 +100,7 @@ function MainView() {
           </ul>
 
           <Link
-            to="/#form"
+            to="/bmw_ix_website/#form"
             className="main__btn"
             onClick={() => {
               setMenuClicked(false);

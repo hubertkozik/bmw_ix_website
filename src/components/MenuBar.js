@@ -21,10 +21,10 @@ function MenuBar({ menuClicked, setMenuClicked }) {
       )}
       <ul className="menuBar__menu">
         <li className="menuBar__menuItem">
-          <Link to="/#facts">Nowe BMW iX</Link>
+          <Link to="/bmw_ix_website/#facts">Nowe BMW iX</Link>
         </li>
         <li className="menuBar__menuItem">
-          <Link to="/#form">Umów jazdę próbną</Link>
+          <Link to="/bmw_ix_website/#form">Umów jazdę próbną</Link>
         </li>
         <p className="menuBar__slogan">
           <span className="boldIt">Radość</span> z jazdy

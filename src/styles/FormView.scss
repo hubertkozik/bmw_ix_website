@@ -84,4 +84,10 @@
   .form {
     background-image: url("../images/formBackground@2x.png");
   }
+
+  @media screen and (max-width: 960px) {
+    .form {
+      background-image: none;
+    }
+  }
 }
