@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bmw_ix_website/static/css/main.306484fa.chunk.css",
-    "main.js": "/bmw_ix_website/static/js/main.85e015cc.chunk.js",
-    "main.js.map": "/bmw_ix_website/static/js/main.85e015cc.chunk.js.map",
+    "main.css": "/bmw_ix_website/static/css/main.47007b29.chunk.css",
+    "main.js": "/bmw_ix_website/static/js/main.e542884b.chunk.js",
+    "main.js.map": "/bmw_ix_website/static/js/main.e542884b.chunk.js.map",
     "runtime-main.js": "/bmw_ix_website/static/js/runtime-main.34502432.js",
     "runtime-main.js.map": "/bmw_ix_website/static/js/runtime-main.34502432.js.map",
     "static/js/2.e968e3a9.chunk.js": "/bmw_ix_website/static/js/2.e968e3a9.chunk.js",
     "static/js/2.e968e3a9.chunk.js.map": "/bmw_ix_website/static/js/2.e968e3a9.chunk.js.map",
     "index.html": "/bmw_ix_website/index.html",
-    "static/css/main.306484fa.chunk.css.map": "/bmw_ix_website/static/css/main.306484fa.chunk.css.map",
+    "static/css/main.47007b29.chunk.css.map": "/bmw_ix_website/static/css/main.47007b29.chunk.css.map",
     "static/js/2.e968e3a9.chunk.js.LICENSE.txt": "/bmw_ix_website/static/js/2.e968e3a9.chunk.js.LICENSE.txt",
     "static/media/BMW-Logo-103x115-White-NEW.4770a662.svg": "/bmw_ix_website/static/media/BMW-Logo-103x115-White-NEW.4770a662.svg",
     "static/media/BMW_i_Grey-Colour_RGB.953a4c95.svg": "/bmw_ix_website/static/media/BMW_i_Grey-Colour_RGB.953a4c95.svg",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.34502432.js",
     "static/js/2.e968e3a9.chunk.js",
-    "static/css/main.306484fa.chunk.css",
-    "static/js/main.85e015cc.chunk.js"
+    "static/css/main.47007b29.chunk.css",
+    "static/js/main.e542884b.chunk.js"
   ]
 }
