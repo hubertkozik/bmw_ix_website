@@ -19,6 +19,10 @@
     font-size: $h4FontSize;
   }
 
+  &__radios > input:hover {
+    cursor: pointer;
+  }
+
   &__radio {
     margin-left: 0.5rem;
     margin-right: 1rem;
@@ -42,5 +46,10 @@
     font-weight: bold;
     font-size: $h4FontSize;
     margin-top: 2rem;
+  }
+
+  &__submit:hover {
+    background-color: $hoverColor;
+    cursor: pointer;
   }
 }

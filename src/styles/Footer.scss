@@ -27,6 +27,11 @@
     margin-left: 1rem;
   }
 
+  &__firstRowIcons > svg:hover {
+    filter: brightness(250%);
+    cursor: pointer;
+  }
+
   &__secondRow {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -50,6 +55,10 @@
   &__frameLink {
     color: black;
     text-decoration: none;
+  }
+
+  &__frameLink:hover {
+    color: gray;
   }
 
   &__thirdRow {
